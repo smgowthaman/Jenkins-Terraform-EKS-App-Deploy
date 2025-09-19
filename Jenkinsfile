@@ -12,7 +12,7 @@ pipeline {
         stage('SCM checkout') {
             steps {
                 script {
-                    git branch: 'master', credentialsId: 'aws-cred-smg', url: 'https://github.com/smgowthaman/Jenkins-Terraform-EKS-App-Deploy.git'
+                    git branch: 'master', credentialsId: 'git-cred-smg', url: 'https://github.com/smgowthaman/Jenkins-Terraform-EKS-App-Deploy.git'
                 }
             }
         }
